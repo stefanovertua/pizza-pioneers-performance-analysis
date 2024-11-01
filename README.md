@@ -1,5 +1,5 @@
 # pizza-pioneers-performance-analysis
-Pizza Pioneers: a Comprehensive Performance Analysis
+**PIZZA PIONEERS: A COMPREHENSIVE PERFORMANCE ANALYSIS**
 
 **Overview**
 
