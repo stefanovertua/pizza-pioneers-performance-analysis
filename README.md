@@ -1,6 +1,6 @@
 # PIZZA PIONEERS: A COMPREHENSIVE PERFORMANCE ANALYSIS
 
-# Overview
+## Overview
 
 This project presents key insights and discusses potential solutions for a Pizzeria based in the US, Pizza Pioneers, by offering actionable recommendations aimed at optimizing operational processes, improving efficiency, and addressing current challenges. <br>
 <br> Key questions explored encompass metrics such as consumer taste preferences, order breakdowns, and temporal variations. <br>
@@ -12,15 +12,15 @@ The interactive Power BI dashboard can be viewed [here](https://app.powerbi.com/
 If you have any trouble opening the dashboard, please do not hesitate to contact me at stefano.vertua@gmail.com. <br>
 The original database, consisting of four distinct Excel files, can be downloaded [here](Pizza+Place+Sales.zip).
 
-**Table of Contents (INSERISCI I LINK AI CAPITOLI)** <br>
+**Table of Contents** <br>
 - [Dataset](#dataset) <br>
-Methodology <br>
-Executive summary <br>
-Recommendations <br>
-Limitations <br>
+- [Methodology](#methodology)
+- [Executive Summary](#executive-summary)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
 
-# Dataset
-#Cacca
+## Dataset
+
 The data was sourced from the online database in the Resources section of Maven Analytics’ website. <br> The dataset comprises four different Excel files:
 
 
@@ -35,7 +35,7 @@ A relationship diagram can be seen in the picture below:
 
 The dataset encompasses orders from the entirety of the year 2015.
 
-# Methodology
+## Methodology
 
 The methodology employed for this project comprised the following steps: defining the requirements, data collection, data cleaning and transformation, data modeling, visualization design, testing and validation, and ultimately publishing and sharing insights.
 
@@ -101,7 +101,7 @@ When creating the report, I ensured it was designed with simplicity in mind, whi
 In the top-right corner, two interactive filters have been added. One is a date picker, and the second one allows to select the different types of pizzas.
 
 
-# Executive summary
+## Executive summary
 
 Below are the major insights that emerged from the analysis:
 + In 2015, Pizza Pioneers achieved a total of $817.9K in sales, collecting more than 20K orders and 60 orders per day
@@ -114,7 +114,7 @@ Below are the major insights that emerged from the analysis:
 
 ![image1](https://github.com/user-attachments/assets/129c377b-49db-42df-8636-0f65afa19aba)
 
-# Recommendations
+## Recommendations
 
 Based on the analysis, the following recommendations are proposed:
 + Opening times. Since dinner is the most popular dining period and weekends are particularly busy, ensure adequate staffing level during those peak times, to maintain service quality and reduce waiting times. On the other hand, the restaurant could be open from 11:30 AM, as only a fraction of the clients order in the morning. Similarly, except for the weekend, the pizzeria may reduce the closing hours, since order volumes after 10 PM are typically low.
