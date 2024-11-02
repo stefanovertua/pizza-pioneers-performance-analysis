@@ -12,7 +12,7 @@ The interactive Power BI dashboard can be viewed [here](https://app.powerbi.com/
 If you have any trouble opening the dashboard, please do not hesitate to contact me at stefano.vertua@gmail.com. <br>
 The original database, consisting of four distinct Excel files, can be downloaded [here](Pizza+Place+Sales.zip).
 
-**Table of Contents** <br>
+## **Table of Contents** <br>
 - [Dataset](#dataset) <br>
 - [Methodology](#methodology)
 - [Executive Summary](#executive-summary)
