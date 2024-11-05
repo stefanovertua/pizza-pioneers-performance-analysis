@@ -62,19 +62,17 @@ ADDCOLUMNS(CALENDAR(MIN(orders[date]),MAX(orders[date])),
 "Day no", WEEKDAY([Date],2))
 ```
 
-Once this table was created, the next step was establishing correlations between the new date table and other tables within the Model View, using the date columns. <br>
-
 After completing this, I was able to create new measures, with the first one calculating the total sales, as illustrated below:
 ```
 total_sales=SUMX('order_details','order_details'[quantity]*RELATED(pizzas[price]))
 ```
 
-Another important measure defines the total number of orders. The formula is: 
+Another important metric defines the total number of orders. The formula is: 
 ```
 orders=DISTINCTCOUNT('order_details'[order_id])
 ```
 
-To determine the number of orders per day, I created a new measure using the following formula:
+To determine the number of orders per day, I created a new measure using this calculation:
 ```
 average_orders_daily = DIVIDE(DISTINCTCOUNT(order_details[order_id]), DISTINCTCOUNT(orders[date]))b
 ```
@@ -97,7 +95,7 @@ DIVIDE(DISTINCTCOUNT(order_details[order_details_id]),DISTINCTCOUNT(orders[order
 In this calculation, the numerator counts the unique order detail IDs, representing distinct pizza orders, while the denominator counts the unique order IDs from the orders table.
 
 Once all the calculations had been completed, I built an interactive dashboard to highlight key business metrics and insights. <br>
-When creating the report, I ensured it was designed with simplicity in mind, while providing at the same time the most effective metrics and KPIs. <br> Consistency was taken into account, making sure the fonts, the sizes and all the other graphic elements are harmonized throughout the report. <br>
+When creating the report, I ensured it was designed with simplicity in mind, while providing at the same time the most effective metrics and KPIs. <br> Consistency was taken into account, making sure the fonts, the sizes, and all the other graphic elements were harmonized throughout the report. <br>
 In the top-right corner, two interactive filters have been added. One is a date picker, and the second one allows to select the different types of pizzas.
 
 
@@ -108,20 +106,20 @@ Below are the major insights that emerged from the analysis:
 + Customers predominantly prefer large and medium pizzas, with nearly half of the sales coming from large pizzas. Smaller and extra-large pizzas are less popular.
 + The pizzeria offers four types of pizza categories (Classic, Supreme, Chicken and Veggie), each of them offering from 6 to 9 choices. All those 4 categories are almost equally popular, with no single category overly dominating.
 + Peak orders are from 12:00 to 13:00 and from 16:00 to 19:00, with Friday being the busiest day. Although the afternoon period is not as busy as lunch and dinner, it still attracts a considerable number of orders.
-+ Working days are busier at lunch than the weekend, with Monday 12:00 being the busiest time. On the other hand, dinner service is stronger during the weekend, although it remains a popular option during the week as well.
++ Working days are busier at lunch than the weekend, with Monday at 12:00 being the busiest time. On the other hand, dinner service is stronger during the weekend, although it remains a popular option during the week as well.
 + Seasonal trends show peak sales in the summer followed by a decline in fall
-+ Holidays contribute to increased sales, with peaks on the 4th of July and Thanksgiving. The days with most orders are November 26th (Thanksgiving), November 27th (Black Friday), and July 4th (Independence Day).
++ Holidays contribute to increased sales. The days with most orders are November 26th (Thanksgiving), November 27th (Black Friday), and July 4th (Independence Day).
 
 ![image1](https://github.com/user-attachments/assets/129c377b-49db-42df-8636-0f65afa19aba)
 
 ## Recommendations
 
 Based on the analysis, the following recommendations are proposed:
-+ Opening times. Since dinner is the most popular dining period and weekends are particularly busy, ensure adequate staffing level during those peak times, to maintain service quality and reduce waiting times. On the other hand, the restaurant could be open from 11:30 AM, as only a fraction of the clients order in the morning. Similarly, except for the weekend, the pizzeria may reduce the closing hours, since order volumes after 10 PM are typically low.
++ Opening times. Since dinner is the most popular dining period and weekends are particularly busy, ensure adequate staffing levels during those peak times, to maintain service quality and reduce waiting times. On the other hand, the restaurant could be open from 11:30 AM, as only a fraction of the clients order in the morning. Similarly, except for the weekend, the pizzeria may reduce the closing hours, since order volumes after 10 PM are typically low.
 + Menu Optimization. The 4 main pizza categories are approximately equally popular. However, some changes could be made to the rest of the menu. Consider removing the five least-performing pizzas, which come mostly from the Supreme and Veggie category, as well as the XXL size, as it got just 0.1% of the total sales. Additionally, explore strategies to promote the XL size, which also represents a mere fraction of the sales.
 + Adding new options. Given that a quarter of sales derives from veggie pizzas, there is substantial potential to expand the vegetarian and vegan menu. Introducing innovative plant-based options, as well as 100% vegan pizzas, could appeal to a growing demographic and boost sales in this category. Additionally, consider offering lactose-free, halal-friendly, and gluten-free pizzas to establish Pizza Pioneers as an inclusive pizzeria catering to diverse dietary preferences.
 + Customer Loyalty Program. Implement a customer loyalty program that rewards frequent diners, particularly those who order during off-peak times.
-+ Promotional Strategies. The Marketing Department could launch special promotions and discounts on Sundays, the least-busy day. For example, a “Sunday Funday” deal could help boost Sunday sales.
++ Promotional Strategies. The Marketing Department could launch special promotions and discounts on Sundays, the least busy day. For example, a “Sunday Funday” deal could help boost Sunday sales.
 
 # Limitations
 
