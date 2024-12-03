@@ -74,7 +74,7 @@ orders=DISTINCTCOUNT('order_details'[order_id])
 
 To determine the number of orders per day, I created a new measure using this calculation:
 ```
-average_orders_daily = DIVIDE(DISTINCTCOUNT(order_details[order_id]), DISTINCTCOUNT(orders[date]))b
+average_orders_daily = DIVIDE(DISTINCTCOUNT(order_details[order_id]), DISTINCTCOUNT(orders[date]))
 ```
 Next, I brainstormed additional measures that might enhance my analysis. <br> Given that I have precise timestamps for each purchase, I can categorize orders into specific time intervals: morning, lunch, afternoon, and dinner. “morning” corresponds to the time from the opening until 11:30, “lunch” ranges from 11:30 to 15:00, “afternoon” is between 15:00 to 18:00, while “dinner”  covers the remaining hours until midnight.
 The expression is:
@@ -99,7 +99,7 @@ When creating the report, I ensured it was designed with simplicity in mind, whi
 In the top-right corner, two interactive filters have been added. One is a date picker, and the second one allows to select the different types of pizzas.
 
 
-## Executive summary
+## Executive Summary
 
 Below are the major insights that emerged from the analysis:
 + In 2015, Pizza Pioneers achieved a total of $817.9K in sales, collecting more than 20K orders and 60 orders per day
