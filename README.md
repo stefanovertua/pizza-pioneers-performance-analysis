@@ -25,8 +25,8 @@ The data was sourced from the online database in the Resources section of Maven 
 
 
 + “pizza_type_id”  lists all 32 pizzas available on the menu, detailing the ingredients and categorizing them into one of the four available groups: Classic, Chicken, Supreme, and Veggie
-+ “order_details_id records all orders along with the corresponding quantities
-+ “pizza_id provides a comprehensive list of pizzas in all available sizes (Small, Medium, Large, Extra Large, and Extra Extra Large) along with their respective prices in USD
++ “order_details_id" records all orders along with the corresponding quantities
++ “pizza_id" provides a comprehensive list of pizzas in all available sizes (Small, Medium, Large, Extra Large, and Extra Extra Large) along with their respective prices in USD
 + “order_id” documents the date and time of each order
 
 
