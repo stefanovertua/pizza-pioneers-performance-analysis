@@ -107,7 +107,7 @@ Below are the major insights that emerged from the analysis:
 + The pizzeria offers four types of pizza categories (Classic, Supreme, Chicken and Veggie), each of them offering from 6 to 9 choices. All those 4 categories are almost equally popular, with no single category overly dominating.
 + Peak orders are from 12:00 to 13:00 and from 16:00 to 19:00, with Friday being the busiest day. Although the afternoon period is not as busy as lunch and dinner, it still attracts a considerable number of orders.
 + Working days are busier at lunch than the weekend, with Monday at 12:00 being the busiest time. On the other hand, dinner service is stronger during the weekend, although it remains a popular option during the week as well.
-+ Seasonal trends show peak sales in the summer followed by a decline in fall
++ Seasonal trends show peak sales in the summer followed by a decline in the fall
 + Holidays contribute to increased sales. The days with most orders are November 26th (Thanksgiving), November 27th (Black Friday), and July 4th (Independence Day).
 
 ![image1](https://github.com/user-attachments/assets/129c377b-49db-42df-8636-0f65afa19aba)
