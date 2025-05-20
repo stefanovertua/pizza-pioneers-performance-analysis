@@ -39,7 +39,7 @@ The dataset encompasses orders from the entirety of the year 2015.
 
 The methodology employed for this project comprised the following steps: defining the requirements, data collection, data cleaning and transformation, data modeling, visualization design, testing and validation, and ultimately publishing and sharing insights.
 
-Initially, after importing the CSV file, I analyzed the available columns and data. <br> I noticed that in the “pizza_types” file, row 1 contained header information rather than actual data, as illustrated in the image below. Consequently, I promoted row 1 to serve as the header.
+Initially, after importing the CSV file, I analyzed the available columns and data, leveraging Power Query. <br> I noticed that in the “pizza_types” file, row 1 contained header information rather than actual data, as illustrated in the image below. Consequently, I promoted row 1 to serve as the header.
 
 ![image2](https://github.com/user-attachments/assets/8c609d5c-2dac-465a-b0cf-b2aec81a8c41)
 
