@@ -109,8 +109,10 @@ Below are the major insights that emerged from the analysis:
 + Working days are busier at lunch than the weekend, with Monday at 12:00 being the busiest time. On the other hand, dinner service is stronger during the weekend, although it remains a popular option during the week as well.
 + Seasonal trends show peak sales in the summer followed by a decline in the fall
 + Holidays contribute to increased sales. The days with most orders are November 26th (Thanksgiving), November 27th (Black Friday), and July 4th (Independence Day).
++ 
+![Pizza_Pioneers_Dashboard_page-0001](https://github.com/user-attachments/assets/cae649db-5ad9-4e0d-9c69-4a7524e46db4)
 
-![image1](https://github.com/user-attachments/assets/129c377b-49db-42df-8636-0f65afa19aba)
+
 
 ## Recommendations
 
