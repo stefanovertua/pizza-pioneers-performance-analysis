@@ -50,7 +50,7 @@ To further ensure data accuracy, I utilized the “Column Quality” feature und
 
 The next step involved creating a new table, “date_table”, where I added columns for years, months, quarters, days, etc. This data table is useful for establishing correlations between dates and purchases, identifying likely seasonalities, or determining peak ordering times.
 
-I created a new relationship between the Orders Table and the newly created date table using the date columns. <br> The DAX expression used for creating the date table is as follows:
+I created a new relationship between the Orders Table and the newly generated date table using the date columns. <br> The DAX expression used for creating the date table is as follows:
 ```
 date_table =
 ADDCOLUMNS(CALENDAR(MIN(orders[date]),MAX(orders[date])),
