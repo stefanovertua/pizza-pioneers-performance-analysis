@@ -48,7 +48,7 @@ To further ensure data accuracy, I utilized the “Column Quality” feature und
 
 ![image3](https://github.com/user-attachments/assets/11ae2fe8-012e-44eb-ac8a-359a6e7be99d)
 
-The next step involved creating a new table, “date_table”, where I added columns for years, months, quarters, days, etc. This data table is useful for establishing correlations between dates and purchases, likely seasonalities, or to find out peak ordering times.
+The next step involved creating a new table, “date_table”, where I added columns for years, months, quarters, days, etc. This data table is useful for establishing correlations between dates and purchases, identifying likely seasonalities, or determining peak ordering times.
 
 I created a new relationship between the Orders Table and the newly created date table using the date columns. <br> The DAX expression used for creating the date table is as follows:
 ```
@@ -62,7 +62,7 @@ ADDCOLUMNS(CALENDAR(MIN(orders[date]),MAX(orders[date])),
 "Day no", WEEKDAY([Date],2))
 ```
 
-After completing this, I was able to create new measures, with the first one calculating the total sales, as illustrated below:
+Once the data was properly structured, I proceeded to create two new measures. The first measure calculated the total sales, as illustrated below:
 ```
 total_sales=SUMX('order_details','order_details'[quantity]*RELATED(pizzas[price]))
 ```
@@ -118,8 +118,8 @@ Below are the major insights that emerged from the analysis:
 
 Based on the analysis, the following recommendations are proposed:
 + Opening times. Since dinner is the most popular dining period and weekends are particularly busy, ensure adequate staffing levels during those peak times, to maintain service quality and reduce waiting times. On the other hand, the restaurant could be open from 11:30 AM, as only a fraction of the clients order in the morning. Similarly, except for the weekend, the pizzeria may reduce the closing hours, since order volumes after 10 PM are typically low.
-+ Menu Optimization. The 4 main pizza categories are approximately equally popular. However, some changes could be made to the rest of the menu. Consider removing the five least-performing pizzas, which come mostly from the Supreme and Veggie category, as well as the XXL size, as it got just 0.1% of the total sales. Additionally, explore strategies to promote the XL size, which also represents a mere fraction of the sales.
-+ Adding new options. Given that a quarter of sales derives from veggie pizzas, there is substantial potential to expand the vegetarian and vegan menu. Introducing innovative plant-based options, as well as 100% vegan pizzas, could appeal to a growing demographic and boost sales in this category. Additionally, consider offering lactose-free, halal-friendly, and gluten-free pizzas to establish Pizza Pioneers as an inclusive pizzeria catering to diverse dietary preferences.
++ Menu Optimization. The 4 main pizza categories are approximately equally popular. However, some changes could be made to the rest of the menu. Consider removing the five least-performing pizzas, which come mostly from the Supreme and Veggie categories, as well as the XXL size, as it got just 0.1% of the total sales. Additionally, explore strategies to promote the XL size, which also represents a mere fraction of the sales.
++ Adding new options. Given that a quarter of sales derive from veggie pizzas, there is substantial potential to expand the vegetarian and vegan menu. Introducing innovative plant-based options, as well as 100% vegan pizzas, could appeal to a growing demographic and boost sales in this category. Additionally, consider offering lactose-free, halal-friendly, and gluten-free pizzas to establish Pizza Pioneers as an inclusive pizzeria catering to diverse dietary preferences.
 + Customer Loyalty Program. Implement a customer loyalty program that rewards frequent diners, particularly those who order during off-peak times.
 + Promotional Strategies. The Marketing Department could launch special promotions and discounts on Sundays, the least busy day. For example, a “Sunday Funday” deal could help boost Sunday sales.
 
@@ -128,6 +128,6 @@ Based on the analysis, the following recommendations are proposed:
 While the analysis provides valuable insights, there are a few limitations to consider that might impact the effectiveness of the recommendations.
 + The database lacks detailed customer demographics (age, gender, location). Without knowing who the customers are, it is difficult to create targeted marketing strategies or understand the customer segments that drive the most sales. Understanding the demographics could also help improve product offerings tailored to specific customer needs.
 + The analysis primarily focuses on sales and order data, lacking insights into customer satisfaction metrics (feedback, reviews, satisfaction levels). Recommendations may be ineffective without understanding customer satisfaction levels.
-+ The report does not provide a breakdown of delivery, dine-in, or takeaway orders. Knowing the distributions of order types could influence decisions related to staffing, logistics, and promotional strategies.
++ The report does not provide a breakdown of delivery, dine-in, or takeaway orders. Understanding the distributions of order types could influence decisions related to staffing, logistics, and promotional strategies.
 + There is no detail on repeat versus new customers, and knowing this information could provide different outcomes. If repeat customers drive most of the sales, then the business may want to focus on customer retention strategies. On the other hand, if the business is seeing many first-time customers but low repeat rates, this could indicate an issue with customer satisfaction or the quality of the product.
 
