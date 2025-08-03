@@ -39,7 +39,7 @@ The dataset encompasses orders from the entirety of the year 2015.
 
 The methodology employed for this project comprised the following steps: defining the requirements, data collection, data cleaning and transformation, data modeling, visualization design, testing and validation, and ultimately publishing and sharing insights.
 
-Initially, after importing the CSV file, I analyzed the available columns and data, leveraging Power Query. <br> I noticed that in the “pizza_types” file, row 1 contained header information rather than actual data, as illustrated in the image below. Consequently, I promoted row 1 to serve as the header.
+After importing the CSV file, I began by exploring the available columns and data using Power Query. While reviewing the 'pizza_types' file, I noticed that the first row contained header information instead of actual data. To correct this, I promoted the first row to serve as the column headers, as shown in the image below.
 
 ![image2](https://github.com/user-attachments/assets/8c609d5c-2dac-465a-b0cf-b2aec81a8c41)
 
@@ -109,7 +109,7 @@ Below are the major insights that emerged from the analysis:
 + Working days are busier at lunch than the weekend, with Monday at 12:00 being the busiest time. On the other hand, dinner service is stronger during the weekend, although it remains a popular option during the week as well.
 + Seasonal trends show peak sales in the summer followed by a decline in the fall
 + Holidays contribute to increased sales. The days with most orders are November 26th (Thanksgiving), November 27th (Black Friday), and July 4th (Independence Day).
-+ 
+  
 ![Pizza_Pioneers_Dashboard_page-0001](https://github.com/user-attachments/assets/cae649db-5ad9-4e0d-9c69-4a7524e46db4)
 
 
